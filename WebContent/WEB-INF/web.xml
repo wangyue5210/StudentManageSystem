@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>StudentManageSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+
+  </welcome-file-list>
+  <servlet>
+    
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/user/login.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>StudentList</servlet-name>
+    <servlet-class>controller.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentList</servlet-name>
+    <url-pattern>/student/list.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentSave</servlet-name>
+    <servlet-class>controller.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentSave</servlet-name>
+    <url-pattern>/student/save.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>StudentEdit</servlet-name>
+    <servlet-class>controller.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentEdit</servlet-name>
+    <url-pattern>/student/edit.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>StudentUpdate</servlet-name>
+    <servlet-class>controller.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentUpdate</servlet-name>
+    <url-pattern>/student/update.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>StudentDelete</servlet-name>
+    <servlet-class>controller.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentDelete</servlet-name>
+    <url-pattern>/student/delete.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
